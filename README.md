@@ -1,6 +1,8 @@
 # Unix / Linux Interview Questions
 
 ## Question List
+### Question List
+
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
 2. [Print number](#print-number)
 
@@ -43,7 +45,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <br/>`uniq -c` to count occurrences
 <br/>`sort -bnr` sorts in numeric reverse order while ignoring whitespace
 
-### Print number
+### 3. Print number
 
 - [What is it?](#what-is-it)
 
