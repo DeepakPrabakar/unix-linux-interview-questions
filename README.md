@@ -7,6 +7,7 @@
 <a href="#question_2">2. Print number of times each word appears in a file</a>
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
+[AAA](#aaa)
 
 [3. Print number](#-3-print-number)
 
@@ -64,3 +65,5 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
     ## Why use it?
 
 ## What is it?
+
+## AAA
