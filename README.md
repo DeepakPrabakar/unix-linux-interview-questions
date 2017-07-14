@@ -2,6 +2,8 @@
 
 ## Question List
 [1. Delete blank lines in file](#1.-delete-blank-lines-in-file)
+
+<a href="#question_2">2. Print number of times each word appears in a file</a>
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
 
@@ -18,6 +20,11 @@ Also
 $ grep -v '^\s*$' file.txt
 ```
 <hr />
+<br/>
+<div align="right">
+    <b><a href="#----">↥ back to top</a></b>
+</div>
+<br/>
 
 ### 2. Print number of times each word appears in a file
 ```bash 
