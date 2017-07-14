@@ -49,3 +49,5 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 
     Mark all boxes with X after you completed your changes
     ## Why use it?
+
+## What is it?
