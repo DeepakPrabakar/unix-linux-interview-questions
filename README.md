@@ -7,6 +7,8 @@
 2. [Print number](#print-number)
 [5) CCC](#5-ccc)
 [6. DDD](#6-ddd)
+[7. Delete blank lines in file](#question_7)
+
 
 
 
@@ -53,6 +55,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### 4. ePrint number
 ### 5) CCC
 ### 6. DDD
+### 7. Delete blank lines in file
 
 
 
