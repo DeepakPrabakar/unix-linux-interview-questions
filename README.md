@@ -8,6 +8,8 @@
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
 [4. AAA](#aaa)
+[BAA](#baa)
+
 
 [3. Print number](#-3-print-number)
 
@@ -67,3 +69,5 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ## What is it?
 
 ### 4. AAA
+### BAA
+
