@@ -34,13 +34,8 @@ Also
 $ grep -v '^\s*$' file.txt
 ```
 <hr />
-<br/>
-<div align="right">
-    <b><a href="#----">↥ back to top</a></b> 
-    <a href="#question-list">↥ back to top</a> 
-    
-</div>
-<br/>
+
+
 
 
 
@@ -101,4 +96,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 3. A
 * B
 * C
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
 
