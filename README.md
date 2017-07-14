@@ -8,7 +8,7 @@
 [5) CCC](#5-ccc)
 [6. DDD](#6-ddd)
 [7. Delete blank lines in file](#7-eee)
-[8. How to write](#8-question)
+[8. How](#8-how)
 
 
 
@@ -57,7 +57,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### 5) CCC
 ### 6. DDD
 ### 7. Delete blank lines in file
-### 8. How to write
+### 8. How
 
 
 
