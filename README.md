@@ -1,28 +1,10 @@
 # Unix / Linux Interview Questions
+> This repo contains random questions that have a possibility of being asked in the Interview.
 
 ## Question List
 
 [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
 [2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
-
-1. [Delete blank lines in file](#delete-blank-lines-in-file)
-2. [Print number](#print-number)
-<br/>[5) CCC](#5-ccc)
-<br/>[6. DDD](#6-ddd)
-<br/>[7. Delete blank lines in file](#7-delete-blank-lines-in-file)
-[8. How to write](#8-how-to-write)
-
-
-
-
-<a href="#question_2">2. Print number of times each word appears in a file</a>
-- [Why use it?](#why-use-it)
-- [What is it?](#what-is-it)
-[4. AAA](#aaa)
-[BAA](#baa)
-
-
-[3. Print number](#-3-print-number)
 
 ### 1. Delete blank lines in file
 ```bash
@@ -37,10 +19,6 @@ Also
 $ grep -v '^\s*$' file.txt
 ```
 <hr />
-
-
-
-
 
 ### 2. Print number of times each word appears in a file
 ```bash 
@@ -61,9 +39,6 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### 8. How to write
 
 
-
-- [What is it?](#what-is-it)
-
 - [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
     - answers in C++ and Java
     - recommended in Google candidate coaching
@@ -83,22 +58,6 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
     Mark all boxes with X after you completed your changes
     ## Why use it?
 
-## What is it?
-
-### 4. AAA
-### BAA
-
-### 3. A
-### - B
-### - C
-
-3. A
-- B
-- C
-
-3. A
-* B
-* C
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
