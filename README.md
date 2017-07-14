@@ -52,7 +52,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### Print number
 ### 4. ePrint number
 ### 5) CCC
-### 6 DDD
+### 6. DDD
 
 
 
