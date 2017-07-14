@@ -2,7 +2,7 @@
 
 ## Question List
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
-[Print number](#print-number)
+2. [Print number](#print-number)
 
 <a href="#question_2">2. Print number of times each word appears in a file</a>
 - [Why use it?](#why-use-it)
