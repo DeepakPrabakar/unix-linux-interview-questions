@@ -37,12 +37,12 @@ $ grep -v '^\s*$' file.txt
 <br/>
 <div align="right">
     <b><a href="#----">↥ back to top</a></b> 
-    <b><a href="#question-list">↥ question-list</a></b> 
+    <a href="#question-list">↥ back to top</a> 
     
 </div>
 <br/>
 
-[Question List](#question-list)
+
 
 ### 2. Print number of times each word appears in a file
 ```bash 
