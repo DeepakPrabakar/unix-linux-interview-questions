@@ -7,7 +7,7 @@
 2. [Print number](#print-number)
 [5) CCC](#5-ccc)
 [6. DDD](#6-ddd)
-[7. Delete blank lines in file](#question_7)
+[7. Delete blank lines in file](#7-eee)
 
 
 
