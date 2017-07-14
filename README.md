@@ -1,5 +1,4 @@
-# unix-linux-interview-questions
-My Unix / Linux Interview Questions
+# Unix / Linux Interview Questions
 
 ### 1. Delete blank lines in file
 ```bash
