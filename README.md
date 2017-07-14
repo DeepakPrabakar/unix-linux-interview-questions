@@ -5,6 +5,8 @@
 
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
 2. [Print number](#print-number)
+[5) CCC](#5-ccc)
+
 
 <a href="#question_2">2. Print number of times each word appears in a file</a>
 - [Why use it?](#why-use-it)
@@ -45,8 +47,10 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <br/>`uniq -c` to count occurrences
 <br/>`sort -bnr` sorts in numeric reverse order while ignoring whitespace
 
-3. ###  Print number
+### Print number
 ### 4. ePrint number
+### 5) CCC
+
 
 - [What is it?](#what-is-it)
 
