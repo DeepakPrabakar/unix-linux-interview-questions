@@ -3,7 +3,7 @@
 ## Question List
 
 [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
-[2. Print number of times each word appears in a file](#2-Print-number-of-times-each-word-appears-in-a-file)<br/>
+[2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
 
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
 2. [Print number](#print-number)
