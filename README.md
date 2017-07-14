@@ -1,5 +1,7 @@
 # Unix / Linux Interview Questions
-> This repo contains questions that have been taken from various sources. Most of these involve the use of two or more commands. All the Best !!!
+> This repo contains questions that have been taken from various sources. Most of these involve the use of two or more commands. 
+>
+>*All the Best !!!*
 
 ## Question List
 
