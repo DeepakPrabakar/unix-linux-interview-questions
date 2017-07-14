@@ -1,7 +1,6 @@
 # Unix / Linux Interview Questions
 
 ## Question List
-### Question List
 
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
 2. [Print number](#print-number)
@@ -38,9 +37,10 @@ $ grep -v '^\s*$' file.txt
 <br/>
 <div align="right">
     <b><a href="#----">↥ back to top</a></b>
-    [Question List](#question-list)
+    
 </div>
 <br/>
+[Question List](#question-list)
 
 ### 2. Print number of times each word appears in a file
 ```bash 
@@ -95,4 +95,8 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 3. A
 - B
 - C
+
+3. A
+* B
+* C
 
