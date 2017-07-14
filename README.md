@@ -17,7 +17,7 @@ $ grep -v '^\s*$' file.txt
 
 **2. Print number of times each word appears in a file**
 
-`$ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -bnr`
+```bash $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -bnr```
 <br/>`tr` just replaces spaces woth newlines
 <br/>`grep -v '^\s*$'` trims out empty lines
 <br/>`sort` to prepare as input for uniq
