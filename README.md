@@ -14,8 +14,9 @@ Also
 $ grep -v '^\s*$' file.txt
 ```
 `$ grep -v '^\s*$' file.txt`
+<hr />
 
-**2. Print number of times each word appears in a file**
+### 2. Print number of times each word appears in a file
 
 ```bash 
 $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -bnr
