@@ -7,7 +7,7 @@
 <a href="#question_2">2. Print number of times each word appears in a file</a>
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
-4. [AAA](#aaa)
+[4. AAA](#aaa)
 
 [3. Print number](#-3-print-number)
 
