@@ -45,7 +45,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <br/>`uniq -c` to count occurrences
 <br/>`sort -bnr` sorts in numeric reverse order while ignoring whitespace
 
-### 3. Print number
+3. ###  Print number
 
 - [What is it?](#what-is-it)
 
