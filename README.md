@@ -1,6 +1,7 @@
 # Unix / Linux Interview Questions
 
 - [Why use it?](#why-use-it)
+- [What is it?](#what-is-it)
 
 ### 1. Delete blank lines in file
 ```bash
