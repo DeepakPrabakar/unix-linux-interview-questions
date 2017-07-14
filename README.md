@@ -6,6 +6,8 @@
 1. [Delete blank lines in file](#delete-blank-lines-in-file)
 2. [Print number](#print-number)
 [5) CCC](#5-ccc)
+[6. DDD](#6-ddd)
+
 
 
 <a href="#question_2">2. Print number of times each word appears in a file</a>
@@ -50,6 +52,8 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### Print number
 ### 4. ePrint number
 ### 5) CCC
+### 6 DDD
+
 
 
 - [What is it?](#what-is-it)
