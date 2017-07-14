@@ -1,5 +1,7 @@
 # Unix / Linux Interview Questions
 
+## Question List
+[1. Delete blank lines in file](#1.-delete-blank-lines-in-file)
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
 
