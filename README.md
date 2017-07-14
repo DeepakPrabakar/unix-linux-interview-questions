@@ -8,6 +8,8 @@
 - [Why use it?](#why-use-it)
 - [What is it?](#what-is-it)
 
+[3. Print number](#-3-print-number)
+
 ### 1. Delete blank lines in file
 ```bash
 $ sed '^\s*$'/d' file.txt
