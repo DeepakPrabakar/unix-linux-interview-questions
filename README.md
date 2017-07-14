@@ -5,7 +5,7 @@
 
 ## Question List
 
-- [] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
+- [ ] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
 - [x] [2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
 
 ### 1. Delete blank lines in file
