@@ -1,5 +1,7 @@
 # Unix / Linux Interview Questions
 
+- [Why use it?](#why-use-it)
+
 ### 1. Delete blank lines in file
 ```bash
 $ sed '^\s*$'/d' file.txt
@@ -27,6 +29,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 
 ### 3. Print number of times each word appears in a file
 
+- [What is it?](#what-is-it)
 
 - [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
     - answers in C++ and Java
@@ -45,3 +48,4 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 `git fetch --all`
 
     Mark all boxes with X after you completed your changes
+    ## Why use it?
