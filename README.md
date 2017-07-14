@@ -14,3 +14,14 @@ Also
 $ grep -v '^\s*$' file.txt
 ```
 
+**2. Print number of times each word appears in a file**
+
+```bash
+$ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -bnr
+```
+tr : just replaces spaces woth newlines
+grep -v '^\s*$' : trims out empty lines
+sort : to prepare as input for uniq
+uniq -c : to count occurrences
+sort -bnr : sorts in numeric reverse order while ignoring whitespace
+
