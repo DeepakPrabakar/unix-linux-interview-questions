@@ -87,3 +87,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 ### 4. AAA
 ### BAA
 
+### 3. A
+### - B
+### - C
+
