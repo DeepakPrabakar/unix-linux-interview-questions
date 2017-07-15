@@ -219,3 +219,35 @@ $ ps -ef | awk '{ print $1}' | sort | uniq | wc -l
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+
+### 109. Kill process based on user and process.
+Using grep to search
+```bash
+$ ps -ef | grep "bash" | grep "prabakad"| awk 'BEGIN{print $2}{kill -9 $2}
+
+$ ps -ef | grep "bash" | grep "prabakad"| awk '{print $2}' | xargs kill -9
+```
+Using ps command with -u and -p
+```bash
+$ ps -ef -u prabakad -p 8552 | tail -n +2 | awk '{print $2}' | xargs kill -9
+```
+Explanation
+```bash
+$ ps -ef
+     UID     PID    PPID  TTY        STIME COMMAND
+prabakad   19208   18800 pty0     21:46:39 /usr/bin/bash
+prabakad   11440   19208 pty0     21:46:43 /usr/bin/ps
+prabakad   18800       1 ?        21:46:38 /usr/bin/mintty
+
+$ ps -ef -u prabakad -p 19208
+     UID     PID    PPID  TTY        STIME COMMAND
+prabakad   19208   18800 pty0     21:46:39 /usr/bin/bash
+
+$ ps -ef | grep "bash" | grep "prabakad"
+prabakad   19208   18800 pty0     21:46:39 /usr/bin/bash
+prabakad   19484   19208 pty0     21:47:52 /usr/bin/bash
+```
+`grep` command does not give header.
+
+`ps` command gives header, so use `tail` command to remove it.
+The PIDs are send as arguments using `xargs` and killed using `kill -9`
