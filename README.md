@@ -66,6 +66,6 @@ $./image.sh
 ```
 ### 5. Delete files of size more than 100mb in a folder which are older than 90 days
 ```bash
-$ find /folder -size +204800 -mtime +90 exec rm {} \;
+$ find /folder -size +204800 -mtime +90 -exec rm {} \;
 ```
 
