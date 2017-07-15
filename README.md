@@ -7,7 +7,8 @@
 
 - [ ] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
 - [x] [2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
-[3. List all the files in directory except .txt and .pdf](#3-list-all-the-files-in-directory-except-txt-and-pdf)
+[3. List all the files in directory except .txt and .pdf](#3-list-all-the-files-in-directory-except-txt-and-pdf)<br/>
+[4. Rename all .jpg files to .jpeg](#4-rename-all-jpg-files-to-jpeg)
 
 ### 1. Delete blank lines in file
 ```bash
@@ -50,3 +51,13 @@ $ find -not -iname "*.txt"
 $ find . ! '(' -name '*.txt' -o -name '*.pdf' ')'
 ```
 Reference: [https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions](#https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions)
+
+### 4. Rename all .jpg files to .jpeg
+```bash
+for x in `ls ./images/`;
+do
+    a=`echo $x | cut -d'.' -f1`
+    mv ./images/$x ./images/$a".jpeg";
+done
+```
+
