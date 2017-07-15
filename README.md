@@ -11,6 +11,7 @@
 [4. Rename all .jpg files to .jpeg](#4-rename-all-jpg-files-to-jpeg)<br/>
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
 [6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
+[7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -77,23 +78,31 @@ $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;} 
     <a href="#question-list">Back To Top</a> 
 </div>
 
-### 7. Given an input of lines having alphabets and numbers. Print only the distinct alpha-numberic lines.
+### 7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.
 
 **Input**
+```
+$ vi input.txt
+
 1234567890
 0987654321
 ABCDEFGH
 123456789X
 1234567890
 123456789X
+```
 **Output**
+```
 123456789X
+```
 ```bash
-#!/bin/bash
-vi script.sh
+$ vi script.sh
 
+#!/bin/bash
 awk '
-BEGIN{ i=0; }
+BEGIN {
+i=0; 
+}
 { 
     if (($1 ~ /[0-9]/) && ($1 ~ /[A-Z]/)) { 
         flg=0; 
