@@ -10,6 +10,7 @@
 [3. List all the files in directory except .txt and .pdf](#3-list-all-the-files-in-directory-except-txt-and-pdf)<br/>
 [4. Rename all .jpg files to .jpeg](#4-rename-all-jpg-files-to-jpeg)<br/>
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
+[6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -33,11 +34,6 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <br/>`sort` to prepare as input for uniq
 <br/>`uniq -c` to count occurrences
 <br/>`sort -bnr` sorts in numeric reverse order while ignoring whitespace
-
-<div align="right">
-    <a href="#question-list">Back To Top</a> 
-</div>
-
 ### 3. List all the files in directory except .txt and .pdf
 ```bash
 $ ls -I "*.txt" -I "*.pdf"
@@ -52,6 +48,9 @@ $ find -not -iname "*.txt"
 $ find . ! '(' -name '*.txt' -o -name '*.pdf' ')'
 ```
 Reference: [https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions](#https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions)
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
 ### 4. Rename all .jpg files to .jpeg
 ```bash
 $ vi image.sh
@@ -68,4 +67,13 @@ $./image.sh
 ```bash
 $ find /folder -size +204800 -mtime +90 -exec rm {} \;
 ```
+###6. Reverse the words in a sentence
+```bash
+$  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;}  }'    
+
+Output: day good a Have
+```
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
 
