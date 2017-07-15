@@ -77,3 +77,42 @@ $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;} 
     <a href="#question-list">Back To Top</a> 
 </div>
 
+### 7. Given an input of lines having alphabets and numbers. Print only the distinct alpha-numberic lines.
+
+**Input**
+1234567890
+0987654321
+ABCDEFGH
+123456789X
+1234567890
+123456789X
+**Output**
+123456789X
+```bash
+#!/bin/bash
+vi script.sh
+
+awk '
+BEGIN{ i=0; }
+{ 
+    if (($1 ~ /[0-9]/) && ($1 ~ /[A-Z]/)) { 
+        flg=0; 
+        for (x = 0; $x < $i; x=$x+1) { 
+            if($arr[$x] == $1) {
+                flg=1;
+                break;
+            } 
+        }
+        if(flg==0) {
+            arr[$i] = $1; i=$i+1;
+        } 
+    } 
+}
+END { 
+    for (x = 0; x < $i; x++)
+        print $arr[0]
+}' input.txt | uniq
+
+$ ./script.sh
+```
+
