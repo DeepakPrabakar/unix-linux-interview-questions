@@ -62,7 +62,7 @@ do
     mv ./images/$x ./images/$a".jpeg";
 done
 
-$./image.sh
+$ ./image.sh
 ```
 ### 5. Delete files of size more than 100mb in a folder which are older than 90 days
 ```bash
