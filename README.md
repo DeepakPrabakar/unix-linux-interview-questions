@@ -7,7 +7,7 @@
 
 - [ ] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
 - [x] [2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
-[3. List all the files in directory except .txt and .pdf](#3-List-all-the-files-in-directory-except-txt-and-pdf)
+[3. List all the files in directory except .txt and .pdf](#3-list-all-the-files-in-directory-except-txt-and-pdf)
 
 ### 1. Delete blank lines in file
 ```bash
