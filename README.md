@@ -1,5 +1,6 @@
 # Unix / Linux Interview Questions
 > This repo contains questions that have been taken from various sources. Most of these involve the use of two or more commands. 
+> I have used **GIT Bash** to execute the below scripts.
 >
 >*All the Best !!!*
 
@@ -12,6 +13,7 @@
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
 [6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
 [7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
+[8. Given a comman separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comman-separated-input-file-with-items,-category-and-cost-display-the-category-and-its-sum)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -79,7 +81,6 @@ $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;} 
 </div>
 
 ### 7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.
-
 **Input**
 ```
 $ vi input.txt
@@ -123,5 +124,51 @@ END {
 }' input.txt | uniq
 
 $ ./script.sh
+```
+### 8. Given a comman separated input file with items, category and cost. Display the category and its sum.
+**Input**
+```
+$ vi input.txt
+
+item1,category1,200
+item2,category2,100
+item3,category3,300
+item4,category1,400
+item5,category2,500
+item6,category1,600
+```
+**Output**
+```
+category1 - 1200
+category2 - 600
+category3 - 300
+```
+```bash
+awk '
+BEGIN{
+x=1;
+flag=0
+}
+{ 
+    split($0,arr,",")
+    flag=0;
+    for(i=1;i<=x;i++){
+        if(arr[2]==cat_arr[i]){
+            flag=1;
+            sum_arr[i]=sum_arr[i]+arr[3]
+        }
+    }
+    if(flag==0){
+        cat_arr[x]=arr[2]
+        sum_arr[x]=arr[3]
+        x++;
+    }
+}
+END {
+    for(i=1;i<x;i++){
+        print(cat_arr[i],"-",sum_arr[i])
+    }
+}' input.txt
+
 ```
 
