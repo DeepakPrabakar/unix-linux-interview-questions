@@ -7,6 +7,7 @@
 
 - [ ] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
 - [x] [2. Print number of times each word appears in a file](#2-print-number-of-times-each-word-appears-in-a-file)<br/>
+[3. List all the files in directory except .txt and .pdf](#3-List-all-the-files-in-directory-except-txt-and-pdf)
 
 ### 1. Delete blank lines in file
 ```bash
@@ -34,4 +35,15 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
-
+### 3. List all the files in directory except .txt and .pdf
+```bash
+$ ls -I "*.txt" -I "*.pdf"
+```
+If you want to iterate across all the subdirectories:
+```bash
+$ ls -I "*.txt" -I "*.pdf" -R
+```
+Also
+```bash
+$ find -not -iname "*.txt"
+```
