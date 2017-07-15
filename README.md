@@ -13,7 +13,7 @@
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
 [6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
 [7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
-[8. Given a comman separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comman-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
+[8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -125,7 +125,7 @@ END {
 
 $ ./script.sh
 ```
-### 8. Given a comman separated input file with items, category and cost. Display the category and its sum.
+### 8. Given a comma separated input file with items, category and cost. Display the category and its sum.
 **Input**
 ```
 $ vi input.txt
@@ -148,13 +148,13 @@ $ vi script.sh
 
 awk '
 BEGIN{
-x=1;
+x=0;
 flag=0
 }
 { 
-    split($0,arr,",")
+    split($0,arr,",")           # split - arr[1] has item, arr[2] has category, arr[3] has cost
     flag=0;
-    for(i=1;i<=x;i++){
+    for(i=0;i<=x;i++){
         if(arr[2]==cat_arr[i]){
             flag=1;
             sum_arr[i]=sum_arr[i]+arr[3]
@@ -167,7 +167,7 @@ flag=0
     }
 }
 END {
-    for(i=1;i<x;i++){
+    for(i=0;i<x;i++){
         print(cat_arr[i],"-",sum_arr[i])
     }
 }' input.txt
