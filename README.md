@@ -15,6 +15,7 @@
 [7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
 [8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
 [9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`](#9-output-of-following-command-ps--ef--awk--print-1--sort--uniq--wc--l)<br/>
+[10. Kill process based on user and process.](#10-kill-process-based-on-user-and-process)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -220,14 +221,14 @@ $ ps -ef | awk '{ print $1}' | sort | uniq | wc -l
     <a href="#question-list">Back To Top</a> 
 </div>
 
-### 109. Kill process based on user and process.
-Using grep to search
+### 10. Kill process based on user and process.
+- Using grep to search
 ```bash
 $ ps -ef | grep "bash" | grep "prabakad"| awk 'BEGIN{print $2}{kill -9 $2}
 
 $ ps -ef | grep "bash" | grep "prabakad"| awk '{print $2}' | xargs kill -9
 ```
-Using ps command with -u and -p
+- Using ps command with -u and -p
 ```bash
 $ ps -ef -u prabakad -p 8552 | tail -n +2 | awk '{print $2}' | xargs kill -9
 ```
@@ -247,7 +248,6 @@ $ ps -ef | grep "bash" | grep "prabakad"
 prabakad   19208   18800 pty0     21:46:39 /usr/bin/bash
 prabakad   19484   19208 pty0     21:47:52 /usr/bin/bash
 ```
-`grep` command does not give header.
-
-`ps` command gives header, so use `tail` command to remove it.
+`grep` command does not give header.<br/>
+`ps` command gives header, so use `tail` command to remove it.<br/>
 The PIDs are send as arguments using `xargs` and killed using `kill -9`
