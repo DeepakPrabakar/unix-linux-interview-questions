@@ -71,9 +71,8 @@ $ find /folder -size +204800 -mtime +90 -exec rm {} \;
 ### 6. Reverse the words in a sentence
 ```bash
 $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;}  }'    
-
-Output: day good a Have
 ```
+**Output:** day good a Have
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
