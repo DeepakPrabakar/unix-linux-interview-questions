@@ -13,7 +13,7 @@
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
 [6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
 [7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
-[8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)
+[8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
 [9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`](#9-output-of-following-command-ps--ef--awk--print-1--sort--uniq--wc--l)<br/>
 
 ### 1. Delete blank lines in file
@@ -126,6 +126,10 @@ END {
 
 $ ./script.sh
 ```
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
+
 ### 8. Given a comma separated input file with items, category and cost. Display the category and its sum.
 **Input**
 ```
@@ -175,6 +179,10 @@ END {
 
 $ ./script.sh
 ```
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
+
 ### 9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`
 **Answer** 2
 ```bash
