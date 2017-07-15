@@ -13,7 +13,8 @@
 [5. Delete files of size more than 100mb in a folder which are older than 90 days](#5-delete-files-of-size-more-than-100mb-in-a-folder-which-are-older-than-90-days)<br/>
 [6. Reverse the words in a sentence](#6-reverse-the-words-in-a-sentence)<br/>
 [7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.](#7-given-an-input-file-having-lines-with-alphabets-and-numbers-print-only-the-distinct-alpha-numberic-lines)<br/>
-[8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
+[8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)
+[9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`](#9-output-of-following-command-ps--ef--awk--print-1--sort--uniq--wc--l)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -174,4 +175,39 @@ END {
 
 $ ./script.sh
 ```
+### 9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`
+**Answer** 2
+```bash
+$ ps -ef
+     UID     PID    PPID  TTY        STIME COMMAND
+prabakad   20464       1 ?          Jul 13 /usr/bin/mintty
+prabakad    4940   18944 pty2       Jul 14 /usr/bin/bash
+prabakad   18944       1 ?          Jul 14 /usr/bin/mintty
+prabakad   19944   20464 pty1       Jul 13 /usr/bin/bash
+prabakad   11492    4940 pty2       Jul 14 /usr/bin/winpty
+prabakad   20708   16868 pty0     20:38:09 /usr/bin/ps
+prabakad   16868   13672 pty0       Jul 12 /usr/bin/bash
+prabakad   13672       1 ?          Jul 12 /usr/bin/mintty
 
+$ ps -ef | awk '{ print $1}'
+UID
+prabakad
+prabakad
+prabakad
+prabakad
+prabakad
+prabakad
+prabakad
+prabakad
+prabakad
+
+$ ps -ef | awk '{ print $1}' | sort | uniq
+prabakad
+UID
+
+$ ps -ef | awk '{ print $1}' | sort | uniq | wc -l
+2
+```
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
