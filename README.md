@@ -35,6 +35,7 @@ $ cat file | tr '[:space:]' '[\n*]' | grep -v '^\s*$' | sort | uniq -c | sort -b
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+
 ### 3. List all the files in directory except .txt and .pdf
 ```bash
 $ ls -I "*.txt" -I "*.pdf"
