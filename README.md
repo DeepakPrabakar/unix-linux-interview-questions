@@ -51,6 +51,7 @@ Reference: [https://unix.stackexchange.com/questions/47151/how-do-i-list-every-f
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+
 ### 4. Rename all .jpg files to .jpeg
 ```bash
 $ vi image.sh
@@ -67,7 +68,7 @@ $./image.sh
 ```bash
 $ find /folder -size +204800 -mtime +90 -exec rm {} \;
 ```
-###6. Reverse the words in a sentence
+### 6. Reverse the words in a sentence
 ```bash
 $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;}  }'    
 
