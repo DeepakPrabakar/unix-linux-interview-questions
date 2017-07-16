@@ -16,7 +16,9 @@
 [8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
 [9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`](#9-output-of-following-command-ps--ef--awk--print-1--sort--uniq--wc--l)<br/>
 [10. Kill process based on user and process.](#10-kill-process-based-on-user-and-process)<br/>
-[11. Print contents of a file starting from the nth line.](#11-print-contents-of-a-file-starting-from-the-nth-line)
+[11. Print contents of a file starting from the nth line.](#11-print-contents-of-a-file-starting-from-the-nth-line)<br/>
+[12. Write a command to calculate the total size of all pdf files in the directory.](#12-write-a-command-to-calculate-the-total-size-of-all-pdf-files-in-the-directory)<br/>
+[13. Write a command to delete the first and last line in every file in the directory and rename it.](#13-write-a-command-to-delete-the-first-and-last-line-in-every-file-in-the-directory-and-rename-it)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -252,6 +254,10 @@ prabakad   19484   19208 pty0     21:47:52 /usr/bin/bash
 `grep` command does not give header.<br/>
 `ps` command gives header, so use `tail` command to remove it.<br/>
 The PIDs are sent as arguments using `xargs` and killed using `kill -9`
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
+
 ### 11. Print contents of a file starting from the nth line.
 For example, print the give file starting from the 4th line
 
@@ -297,5 +303,58 @@ line11
 Additional Information
 
 `head` command displays first n lines.<br/>
-`tail` command displays last n lines. If `tail` is used with `+`, displays lines starting from nth line as show above.<br/>
+`tail` command displays last n lines. If `tail` is used with `+`, displays lines starting from nth line as shown above.<br/>
 The `sed` command above deletes the first 3 lines and prints output starting from 4th line.
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
+
+### 12. Write a command to calculate the total size of all pdf files in the directory.
+```bash
+$ du -hc *.pdf | tail -1
+25K     total
+```
+### 13. Write a command to delete the first and last line in every file in the directory and rename it.
+**Input**
+```bash
+$ ls ./sample
+abc_20171607.txt      rocket_20171503.txt   xyz_20171507.txt
+mno xyz_20171507.txt  sample1_20171607.txt
+
+$ cat ./sample/abc_20171607.txt
+header
+line1
+line2
+line3
+footer
+```
+**Output**
+```bash
+$ ls sample
+renamed_abc_20171607.log      renamed_sample1_20171607.log
+renamed_mno xyz_20171507.log  renamed_xyz_20171507.log
+renamed_rocket_20171503.log
+
+$ cat ./sample/renamed_abc_20171607.log
+line1
+line2
+line3
+```
+```bash
+$ vi sample.sh
+
+IFS=$'\n'
+for filename in `ls ./sample -I '*.sh'`;                        # ls in sample folder searching file other than .sh
+do
+    newfilename=`echo $filename | cut -d '.' -f1`
+    sed -i -e '1d' -e '$d' ./sample/$filename                   # -i to save to file. '1d' and '$d' delete first and last line
+    mv ./sample/$filename ./sample/"renamed"_$newfilename".log"
+done
+
+$ ./sample.sh
+```
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
+
+### 14.
