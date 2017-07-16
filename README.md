@@ -253,7 +253,46 @@ prabakad   19484   19208 pty0     21:47:52 /usr/bin/bash
 `ps` command gives header, so use `tail` command to remove it.<br/>
 The PIDs are sent as arguments using `xargs` and killed using `kill -9`
 ### 11. Print contents of a file starting from the nth line.
-For example, print the give file starting from the 3rd line
-```bash
+For example, print the give file starting from the 4th line
 
+**Input**
+```bash
+$ cat lines.txt
+line1
+line2
+line3
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+line11
 ```
+- Using tail command
+```bash
+$ cat lines.txt | tail -n +4
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+line11
+```
+- Using sed command
+```bash
+$ sed '1,3d' lines.txt
+line4
+line5
+line6
+line7
+line8
+line9
+line10
+line11
+```
+Additional Information
+
