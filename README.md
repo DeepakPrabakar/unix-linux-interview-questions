@@ -28,6 +28,7 @@
 [11. Print contents of a file starting from the nth line.](#11-print-contents-of-a-file-starting-from-the-nth-line)<br/>
 [12. Write a command to calculate the total size of all pdf files in the directory.](#12-write-a-command-to-calculate-the-total-size-of-all-pdf-files-in-the-directory)<br/>
 [13. Write a command to delete the first and last line in every file in the directory and rename it.](#13-write-a-command-to-delete-the-first-and-last-line-in-every-file-in-the-directory-and-rename-it)<br/>
+[14. Given a file with records. Print the sum of m where name=aman](#14-given-a-file-with-records-print-the-sum-of-m-where-nameaman)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -65,6 +66,7 @@ $ find -not -iname "*.txt"
 $ find . ! '(' -name '*.txt' -o -name '*.pdf' ')'
 ```
 Reference: [https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions](#https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions)
+https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
@@ -379,4 +381,55 @@ xyz_20171507.txt
     <a href="#question-list">Back To Top</a> 
 </div>
 
-### 14.
+### 14. Given a file with records. Print the sum of m where name=aman
+**Input**
+```bash
+$ cat input.txt
+t=20
+m=10
+name=aman
+--xx--
+t=30
+m=20
+name=deep
+--xx--
+t=40
+m=30
+name=aman
+--xx--
+t=40
+m=300
+name=aman
+--xx--
+t=40
+m=10
+name=rahul
+```
+**Output**
+```
+sum of aman is 340
+```
+```bash
+$ vi script.awk
+
+BEGIN {
+	RS="--xx--\n";
+	FS="\n";
+}
+{
+	split($3,data,"=")
+	if(data[2]=="aman"){
+        split($2,mdata,"=")
+        sum=sum+mdata[2]
+	}
+}
+END{
+	print ("sum of aman is",sum)
+}
+
+$ awk -f script.awk input.txt
+```
+References: http://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
