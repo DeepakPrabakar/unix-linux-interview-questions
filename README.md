@@ -65,8 +65,7 @@ Also
 $ find -not -iname "*.txt"
 $ find . ! '(' -name '*.txt' -o -name '*.pdf' ')'
 ```
-Reference: [https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions](#https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions)
-https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions
+Reference: https://unix.stackexchange.com/questions/47151/how-do-i-list-every-file-in-a-directory-except-those-with-specified-extensions
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
@@ -429,7 +428,7 @@ END{
 
 $ awk -f script.awk input.txt
 ```
-References: http://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/
+Reference: http://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables-fs-ofs-rs-ors-nr-nf-filename-fnr/
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
