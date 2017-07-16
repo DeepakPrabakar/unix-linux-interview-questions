@@ -5,6 +5,8 @@
 >*All the Best !!!*
 
 [Tip n Hints](#https://github.com/DeepakPrabakar/unix-linux-interview-questions/blob/master/tip_hints.md)
+[Tip n Hints](/tip_hints.md)
+
 
 ## Question List
 
