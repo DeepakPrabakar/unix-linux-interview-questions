@@ -4,6 +4,8 @@
 >
 >*All the Best !!!*
 
+[Tip n Hints](#https://github.com/DeepakPrabakar/unix-linux-interview-questions/blob/master/tip_hints.md)
+
 ## Question List
 
 - [ ] [1. Delete blank lines in file](#1-delete-blank-lines-in-file)<br/>
