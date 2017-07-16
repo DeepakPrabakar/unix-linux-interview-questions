@@ -2,11 +2,16 @@
 > This repo contains questions that have been taken from various sources. Most of these involve the use of two or more commands. 
 > I have used **GIT Bash** to execute the below scripts.
 >
+> **Difficulty Level:** Beginner to Intermediate
+>
 >*All the Best !!!*
 
-[Tip n Hints](#https://github.com/DeepakPrabakar/unix-linux-interview-questions/blob/master/tip_hints.md)
 [Tip n Hints](/tip_hints.md)
 
+## References
+- http://www.folkstalk.com/
+- http://www.thegeekstuff.com/
+- http://www.theunixschool.com/
 
 ## Question List
 
@@ -356,6 +361,19 @@ do
 done
 
 $ ./sample.sh
+```
+Additional
+
+If `IFS=$'\n'` (Input Field Separator) is missing, file names having space in them are not recognised.
+```bash
+$ ./sample.sh
+abc_20171607.txt
+mno
+xyz_20171507.txt
+rocket_20171503.txt
+sample1_20171607.txt
+xyz_20171507.txt
+
 ```
 <div align="right">
     <a href="#question-list">Back To Top</a> 
