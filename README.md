@@ -86,7 +86,7 @@ $  echo "Have a good day" | awk '{ for(i=0;i<NF;++i){ x=NF-i; printf "%s ",$x;} 
 ### 7. Given an input file having lines with alphabets and numbers. Print only the distinct alpha-numberic lines.
 **Input**
 ```
-$ vi input.txt
+$ cat input.txt
 
 1234567890
 0987654321
@@ -135,7 +135,7 @@ $ ./script.sh
 ### 8. Given a comma separated input file with items, category and cost. Display the category and its sum.
 **Input**
 ```
-$ vi input.txt
+$ cat input.txt
 
 item1,category1,200
 item2,category2,100
@@ -296,3 +296,6 @@ line11
 ```
 Additional Information
 
+`head` command displays first n lines.<br/>
+`tail` command displays last n lines. If `tail` is used with `+`, displays lines starting from nth line as show above.<br/>
+The `sed` command above deletes the first 3 lines and prints output starting from 4th line.
