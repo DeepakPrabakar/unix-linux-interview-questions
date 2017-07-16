@@ -16,6 +16,7 @@
 [8. Given a comma separated input file with items, category and cost. Display the category and its sum.](#8-given-a-comma-separated-input-file-with-items-category-and-cost-display-the-category-and-its-sum)<br/>
 [9. Output of following command `ps -ef | awk '{ print $1}' | sort | uniq | wc -l`](#9-output-of-following-command-ps--ef--awk--print-1--sort--uniq--wc--l)<br/>
 [10. Kill process based on user and process.](#10-kill-process-based-on-user-and-process)<br/>
+[11. Print contents of a file starting from the nth line.](#11-print-contents-of-a-file-starting-from-the-nth-line)
 
 ### 1. Delete blank lines in file
 ```bash
@@ -250,4 +251,9 @@ prabakad   19484   19208 pty0     21:47:52 /usr/bin/bash
 ```
 `grep` command does not give header.<br/>
 `ps` command gives header, so use `tail` command to remove it.<br/>
-The PIDs are send as arguments using `xargs` and killed using `kill -9`
+The PIDs are sent as arguments using `xargs` and killed using `kill -9`
+### 11. Print contents of a file starting from the nth line.
+For example, print the give file starting from the 3rd line
+```bash
+
+```
