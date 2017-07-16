@@ -364,7 +364,7 @@ $ ./sample.sh
 ```
 Additional
 
-If `IFS=$'\n'` (Input Field Separator) is missing, file names having space in them are not recognised.
+If `IFS=$'\n'` (Internal Field Separator) is missing, file names having space in them are not recognised.
 ```bash
 $ ./sample.sh
 abc_20171607.txt
