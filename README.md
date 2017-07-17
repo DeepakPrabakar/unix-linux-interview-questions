@@ -29,6 +29,7 @@
 [12. Write a command to calculate the total size of all pdf files in the directory.](#12-write-a-command-to-calculate-the-total-size-of-all-pdf-files-in-the-directory)<br/>
 [13. Write a command to delete the first and last line in every file in the directory and rename it.](#13-write-a-command-to-delete-the-first-and-last-line-in-every-file-in-the-directory-and-rename-it)<br/>
 [14. Given a file with records. Print the sum of m where name=aman](#14-given-a-file-with-records-print-the-sum-of-m-where-nameaman)<br/>
+[15. Given a file with numbers. Sort each line.](#15-given-a-file-with-numbers-sort-each-line)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -432,3 +433,24 @@ Reference: http://www.thegeekstuff.com/2010/01/8-powerful-awk-built-in-variables
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+
+### 15. Given a file with numbers. Sort each line.
+**Input**
+```bash
+$ cat input.txt
+4 6 8 1 7
+2 12 9 6 10
+6 1 14 5 7
+```
+**Output**
+```
+1 4 6 7 8
+2 6 9 10 12
+1 5 6 7 14
+```
+```bash
+$ awk ' {split( $0, a, " " ); asort( a ); for( i = 1; i <= length(a); i++ ) printf( "%s ", a[i] ); printf( "\n" ); }' input.txt
+```
+Reference: http://www.unix.com/shell-programming-and-scripting/180835-sort-each-row-horizontally-awk-any.html
+
+
