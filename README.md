@@ -15,6 +15,12 @@
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
+
 ## References
 - http://www.folkstalk.com/
 - http://www.thegeekstuff.com/
@@ -490,8 +496,6 @@ Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-scr
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
-
-[Back To Top](#question-list)
 
 ### 17. Reverse last 4 digits of a string.
 **Input**
