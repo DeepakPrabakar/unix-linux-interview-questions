@@ -30,6 +30,7 @@
 [13. Write a command to delete the first and last line in every file in the directory and rename it.](#13-write-a-command-to-delete-the-first-and-last-line-in-every-file-in-the-directory-and-rename-it)<br/>
 [14. Given a file with records. Print the sum of m where name=aman](#14-given-a-file-with-records-print-the-sum-of-m-where-nameaman)<br/>
 [15. Given a file with numbers. Sort each line.](#15-given-a-file-with-numbers-sort-each-line)<br/>
+[16. Bash shell script to reverse a string / word.](#16-bash-shell-script-to-reverse-a-string--word)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -452,5 +453,36 @@ $ cat input.txt
 $ awk ' {split( $0, a, " " ); asort( a ); for( i = 1; i <= length(a); i++ ) printf( "%s ", a[i] ); printf( "\n" ); }' input.txt
 ```
 Reference: http://www.unix.com/shell-programming-and-scripting/180835-sort-each-row-horizontally-awk-any.html
+### 16. Bash shell script to reverse a string / word.
+```bash
+$ vi reverse.sh
+
+#!/bin/bash
+input="$1"
+reverse=""
+ 
+len=${#input}
+for (( i=$len-1; i>=0; i-- ))
+do 
+	reverse="$reverse${input:$i:1}"
+done
+ 
+echo "$reverse"
+
+$ ./reverse.sh Hello
+olleH
+```
+Also
+```bash
+$ echo "Hello" | rev
+olleH
+
+$ rev<<<"This is a test"
+tset a si sihT
+```
+Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-script/
+<div align="right">
+    <a href="#question-list">Back To Top</a> 
+</div>
 
 
