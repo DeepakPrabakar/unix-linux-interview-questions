@@ -459,14 +459,12 @@ $ vi reverse.sh
 
 #!/bin/bash
 input="$1"
-reverse=""
- 
+reverse="" 
 len=${#input}
 for (( i=$len-1; i>=0; i-- ))
 do 
 	reverse="$reverse${input:$i:1}"
-done
- 
+done 
 echo "$reverse"
 
 $ ./reverse.sh Hello
@@ -484,5 +482,3 @@ Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-scr
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
-
-
