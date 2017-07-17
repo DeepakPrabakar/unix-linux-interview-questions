@@ -16,9 +16,9 @@
 | ext    | extension to be used for dest files. |
 
 
-First Header | Second Header
------------- | -------------
-Content cell 1 | Content cell 2
+First Header | Second Header | Second Header
+------------ | ------------- | -------------:
+Content cell 1 | Content cell 2 | RitghtContent cell 2
 Content column 1 | Content column 2
 
 ## References
