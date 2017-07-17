@@ -31,6 +31,7 @@
 [14. Given a file with records. Print the sum of m where name=aman](#14-given-a-file-with-records-print-the-sum-of-m-where-nameaman)<br/>
 [15. Given a file with numbers. Sort each line.](#15-given-a-file-with-numbers-sort-each-line)<br/>
 [16. Bash shell script to reverse a string / word.](#16-bash-shell-script-to-reverse-a-string--word)<br/>
+[17. Reverse last 4 digits of a string.](#17-reverse-last-4-digits-of-a-string)<br/>
 
 ### 1. Delete blank lines in file
 ```bash
@@ -482,7 +483,6 @@ Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-scr
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
-
 ### 17. Reverse last 4 digits of a string.
 **Input**
 ```
