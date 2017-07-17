@@ -482,3 +482,38 @@ Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-scr
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+
+### 17. Reverse last 4 digits of a string.
+**Input**
+```
+123456****7890
+```
+**Output**
+```
+123456****0987
+```
+```bash
+$ vi rev.sh
+
+input="$1"
+reverse=""
+
+len=${#input}
+
+for((i=0;i<$len-4;i++))
+do
+{
+reverse="$reverse${input:$i:1}"
+}
+done
+for((i=len-1;i>=len-4;i--))
+do
+{
+reverse="$reverse${input:$i:1}"
+}
+done
+
+echo $reverse
+
+$ ./rev.sh 123456****7890
+```
