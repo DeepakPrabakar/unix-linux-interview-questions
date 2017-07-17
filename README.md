@@ -483,6 +483,8 @@ Reference: https://www.cyberciti.biz/faq/how-to-reverse-string-in-unix-shell-scr
 <div align="right">
     <a href="#question-list">Back To Top</a> 
 </div>
+[Back To Top](#question-list)
+
 ### 17. Reverse last 4 digits of a string.
 **Input**
 ```
