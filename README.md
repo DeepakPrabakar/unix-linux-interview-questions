@@ -9,6 +9,7 @@
 ## Test Commands
 
 [Tip n Hints](/tip_hints.md)
+
 | Option | Description |
 | ------| -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -16,10 +17,10 @@
 | ext    | extension to be used for dest files. |
 
 
-First Header | Second Header | Second Header
------------- | ------------- | -------------:
-Content cell 1 | Content cell 2 | RitghtContent cell 2
-Content column 1 | Content column 2 | engine to be used for processing templates. Handlebars is the default. 
+First Header | Second Header | Second Header | centre
+------------ | ------------- | -------------: | :-------------:
+Content cell 1 | Content cell 2 | RitghtContent cell 2 | centreContent cell 2
+Content column 1 | Content column 2 | engine to be used for processing templates. Handlebars is the default. | engine to be used for processing templates. Handlebars is the default. 
 
 ## References
 - http://www.folkstalk.com/
